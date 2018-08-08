@@ -17,15 +17,14 @@ class HiddenWordtest < MiniTest::Test
     assert_equal("*****", @word1.display)
   end
 
-  # def test_if_letter_is_in_word
-  #   result = @word1.contains_letter?("b")
-  #   assert_equal(true, result)
-  # end
-
   def test_return_array
-
     actual = @word1.word.chars
     expected = ["b","i","n","g","o"]
     assert_equal(expected, actual)
+  end
+
+  def test_if_letter_is_in_word
+    result = @word1.contains_letter?("b")
+    assert_equal(true, result)
   end
 end

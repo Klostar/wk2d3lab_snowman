@@ -9,7 +9,8 @@ class HiddenWord
   end
 
   def contains_letter?(guess)
-    for letter in word
+    array 
+    for letter in array
       if letter == guess
         return true
       else
